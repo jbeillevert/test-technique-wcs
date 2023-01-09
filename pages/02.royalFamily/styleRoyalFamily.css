@@ -1,0 +1,192 @@
+@font-face {
+    /* font titres : Proxima Nova */
+    font-family: 'font1';
+    src: url(/test-technique-wcs/assets/fonts/font1.otf);
+}
+
+@font-face {
+    /* font text : Poppins */
+    font-family: 'font2';
+    src: url(/test-technique-wcs/assets/fonts/font2.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241 245 249);
+}
+
+/* -----------------------NAVBAR---------------------------- */
+
+.navbar {
+    font-family:'font1';
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -3.5pt;
+    color: black;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    letter-spacing: -0.3pt;
+    font-size: 1.3rem;
+}
+
+.menulink {
+    color: black;
+    transition: 500ms;
+}
+
+.menulink:hover {
+    color: rgb(56 189 248);
+}
+
+.select {
+    color: rgb(56 189 248);
+}
+
+.menu-burger {
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+/* -----------------------CONTENT---------------------------- */
+
+
+.section-portrait {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: 60px auto 60px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: 'font1';
+    font-size: 2rem;
+    text-align: left;
+}
+
+.container-portrait {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    padding: 0px 5px;
+}
+
+.king {
+    background: url(/test-technique-wcs/assets/img/king-aeetes.svg) center/cover;
+    width: 100%;
+    height: 462px;
+    border-radius: 4px;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+
+.queen {
+    background: url(/test-technique-wcs/assets/img/queen-idyia.svg) center/cover;
+    width: 100%;
+    height: 462px;
+    border-radius: 4px;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+.princess {
+    background: url(/test-technique-wcs/assets/img/princess-madeas.svg) center/cover;
+    width: 100%;
+    height: 462px;
+    border-radius: 4px;
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'font1';
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+
+p {
+    line-height: 2;
+    font-family: 'font2';
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    
+    .menu-burger {
+        display: block;
+        z-index: 10;
+    }
+       
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navlinks {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(232, 236, 245, 0.685);
+        backdrop-filter: blur(7px);
+        width: 90vw;
+        height: 100vh;
+        font-size: 1.8rem;
+        transform: translateX(-1000%);
+        z-index: 2;
+        
+    }
+    
+    .mobile-menu {
+        transform: translateX(0%);
+        right: 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .container-portrait {
+        flex-direction: column;
+    }
+
+    p {
+        margin-bottom: 80px;
+    }
+
+
+
+    
+}
+
+
